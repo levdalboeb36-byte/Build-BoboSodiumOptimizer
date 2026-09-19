@@ -1,0 +1,11 @@
+accessWidener v2 named
+
+# Access to Minecraft rendering classes for optimization
+accessible class net/minecraft/client/render/ChunkBuilder
+accessible class net/minecraft/client/render/WorldRenderer
+accessible field net/minecraft/client/render/WorldRenderer visibleChunks J
+accessible field net/minecraft/client/render/ChunkBuilder workerCount I
+
+# Access to Sodium classes (when available)
+accessible class me/jellysquid/mods/sodium/client/render/chunk/ChunkRenderBackend
+accessible class me/jellysquid/mods/sodium/client/render/chunk/ChunkRenderer

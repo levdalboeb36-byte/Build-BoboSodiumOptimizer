@@ -1,0 +1,15 @@
+{
+  "required": false,
+  "package": "com.bobo.optimizer.mixin.sodium",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+  ],
+  "client": [
+    "sodium.ChunkRenderBackendMixin",
+    "sodium.ChunkRendererMixin",
+    "sodium.GraphicsStateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

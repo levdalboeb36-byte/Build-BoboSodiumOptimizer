@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.bobo.optimizer.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+  ],
+  "client": [
+    "MinecraftClientMixin",
+    "WorldRendererMixin",
+    "ChunkBuilderAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

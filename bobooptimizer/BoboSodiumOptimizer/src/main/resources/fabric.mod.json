@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "bobosodiumoptimizer",
+  "version": "${version}",
+  "name": "BoboSodiumOptimizer",
+  "description": "A performance optimization addon for Sodium that targets weak integrated graphics and low-end CPUs. Works alongside Sodium to provide additional CPU/GPU optimizations without changing visual quality.",
+  "authors": [
+    "Bobo"
+  ],
+  "contact": {
+    "homepage": "https://github.com/bobo/bobosodiumoptimizer"
+  },
+  "license": "MIT",
+  "icon": "assets/bobosodiumoptimizer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.bobo.optimizer.BoboSodiumOptimizer"
+    ],
+    "client": [
+      "com.bobo.optimizer.client.BoboSodiumOptimizerClient"
+    ]
+  },
+  "mixins": [
+    "bobosodiumoptimizer.mixins.json",
+    "bobosodiumoptimizer.sodium.mixins.json"
+  ],
+  "accessWidener": "bobosodiumoptimizer.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "sodium": ">=0.8.14"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.github_repo": "https://github.com/bobo/bobosodiumoptimizer"
+      }
+    }
+  }
+}
